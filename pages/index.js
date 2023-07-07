@@ -1,5 +1,7 @@
-import { Button } from "@mui/material";
 import Head from "next/head";
+import { ThemeProvider } from "@mui/material/styles";
+import { theme } from "../theme"; // Import your custom theme
+import Navbar from "@/components/Navbar";
 
 export default function Home() {
   return (
@@ -11,7 +13,9 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
-        <Button variant="contained">Test</Button>
+        <ThemeProvider theme={theme}>
+          <Navbar />
+        </ThemeProvider>
       </main>
     </>
   );
