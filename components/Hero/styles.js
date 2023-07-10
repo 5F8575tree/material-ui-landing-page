@@ -1,19 +1,19 @@
 const styles = {
   hero: (theme) => ({
-    padding: "20px",
+    padding: "16px",
     [theme.breakpoints.up("lg")]: {
       display: "flex",
       justifyContent: "center",
-      padding: "44px 20px 20px",
+      padding: "32px 20px 20px",
     },
   }),
   wrapper: (theme) => ({
-    padding: "20px",
+    padding: "16px",
     [theme.breakpoints.up("md")]: {
       maxWidth: 1240,
       display: "flex",
       alignItems: "center",
-      padding: "44px 20px 20px",
+      padding: "32px 20px 20px",
       gap: "35px",
     },
   }),
