@@ -4,6 +4,7 @@ import { theme } from "../theme"; // Import your custom theme
 import Header from "../components/Header/Header";
 import Hero from "@/components/Hero/Hero";
 import QuickGlance from "@/components/QuickGlance/QuickGlance";
+import Experiences from "@/components/Experiences/Experiences";
 
 export default function Home() {
   return (
@@ -19,6 +20,7 @@ export default function Home() {
           <Header />
           <Hero />
           <QuickGlance />
+          <Experiences />
         </ThemeProvider>
       </main>
     </>
