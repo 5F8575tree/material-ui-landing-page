@@ -5,6 +5,7 @@ import Header from "../components/Header/Header";
 import Hero from "@/components/Hero/Hero";
 import QuickGlance from "@/components/QuickGlance/QuickGlance";
 import Experiences from "@/components/Experiences/Experiences";
+import ContactUs from "@/components/ContactUs/ContactUs";
 
 export default function Home() {
   return (
@@ -21,6 +22,7 @@ export default function Home() {
           <Hero />
           <QuickGlance />
           <Experiences />
+          <ContactUs />
         </ThemeProvider>
       </main>
     </>
