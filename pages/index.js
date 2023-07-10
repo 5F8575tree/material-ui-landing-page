@@ -1,7 +1,7 @@
 import Head from "next/head";
 import { ThemeProvider } from "@mui/material/styles";
 import { theme } from "../theme"; // Import your custom theme
-import Navbar from "@/components/Navbar";
+import Header from "../components/Header";
 
 export default function Home() {
   return (
@@ -14,7 +14,7 @@ export default function Home() {
       </Head>
       <main>
         <ThemeProvider theme={theme}>
-          <Navbar />
+          <Header />
         </ThemeProvider>
       </main>
     </>
