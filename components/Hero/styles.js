@@ -22,7 +22,7 @@ const styles = {
     maxWidth: "509px",
     display: "block",
     margin: "44px auto 0",
-    borderRadius: "750px",
+    borderRadius: "75px",
   },
   text: (theme) => ({
     margin: "25px 0",

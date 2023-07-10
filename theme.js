@@ -12,6 +12,19 @@ const theme = createTheme({
       main: "#121212",
     },
   },
+  components: {
+    MuiOutlinedInput: {
+      styleOverrides: {
+        notchedOutline: {
+          border: "none",
+        },
+        input: {
+          padding: "8px",
+        },
+        root: {},
+      },
+    },
+  },
 });
 
 theme.typography.h2 = {

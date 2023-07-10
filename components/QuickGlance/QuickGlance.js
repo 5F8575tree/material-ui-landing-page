@@ -24,7 +24,7 @@ const data = [
     title: "History",
     image: historyImage,
     listItem1: "Discover ancient Buddhist temples",
-    listItem2: "Visit the shrine built by Minamoto no Yoritomo",
+    listItem2: "Visit the shrine of Minamoto no Yoritomo",
     listItem3: "See the Great Buddha of Kamakura",
   },
   {

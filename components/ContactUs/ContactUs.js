@@ -1,7 +1,6 @@
 import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
 import TextField from "@mui/material/TextField";
-import TextareaAutosize from "@mui/material/TextareaAutosize";
 
 import styles from "./styles";
 
@@ -12,6 +11,7 @@ import {
   faArrowRight,
 } from "@fortawesome/free-solid-svg-icons";
 import CustomButton from "../Button";
+import EmptyTextarea from "../CustomTextArea";
 
 const contactImage =
   "https://images.unsplash.com/photo-1531143991054-06c90e011ab5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80";
@@ -30,28 +30,24 @@ const ContactUs = () => {
             <Box sx={styles.itemBlockInfo}>
               <Box sx={styles.titleInfo}>
                 <FontAwesomeIcon icon={faEnvelope} sx={styles.imgInfo} />
-                Email us
+                <Typography sx={{ marginLeft: "4px" }}>Email us</Typography>
               </Box>
               <Box sx={styles.titleValue}>support@email.com</Box>
             </Box>
             <Box sx={styles.itemBlockInfo}>
               <Box sx={styles.titleInfo}>
-                <FontAwesomeIcon icon={faPhone} sx={styles.imgInfo} />
-                Phone us
+                <FontAwesomeIcon icon={faPhone} />
+                <Typography sx={{ marginLeft: "4px" }}>Phone us</Typography>
               </Box>
               <Box sx={styles.titleValue}>7770-9987-9928</Box>
             </Box>
           </Box>
 
           <Box sx={styles.input}>
-            <TextField placeholder="Full name" sx={styles.textField} />
-            <TextField placeholder="Email address" sx={styles.textField} />
+            <TextField placeholder="Name" sx={styles.textField} />
+            <TextField placeholder="Email" sx={styles.textField} />
           </Box>
-          <TextareaAutosize
-            minRows={6}
-            placeholder="Write message"
-            sx={styles.textareaAutosize}
-          />
+          <EmptyTextarea />
           <CustomButton>
             Send message
             <FontAwesomeIcon icon={faArrowRight} />
