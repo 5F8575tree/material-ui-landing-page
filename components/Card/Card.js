@@ -13,17 +13,13 @@ import styles from "./styles";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight, faCheck } from "@fortawesome/free-solid-svg-icons";
 
-const Card = () => {
+const Card = ({ title, image, listItem1, listItem2, listItem3 }) => {
   return (
     <MuiCard sx={styles.card}>
       <CardContent sx={{ padding: "0" }}>
-        <Box
-          component="img"
-          src="https://images.unsplash.com/photo-1570146275065-ae13a9edd4de?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8amFwYW4lMjBzZWFmb29kfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60"
-          sx={styles.image}
-        />
+        <Box component="img" src={image} sx={styles.image} />
         <Typography variant="h3" sx={styles.title}>
-          Cuisine
+          {title}
         </Typography>
         <List>
           <ListItem sx={styles.listItem}>
@@ -34,7 +30,7 @@ const Card = () => {
                 marginLeft: "5px",
               }}
             >
-              Find the best local restaurants
+              {listItem1}
             </Typography>
           </ListItem>
           <ListItem sx={styles.listItem}>
@@ -45,7 +41,7 @@ const Card = () => {
                 marginLeft: "5px",
               }}
             >
-              Share a drink while gazing at the ocean
+              {listItem2}{" "}
             </Typography>
           </ListItem>
           <ListItem sx={styles.listItem}>
@@ -56,7 +52,7 @@ const Card = () => {
                 marginLeft: "5px",
               }}
             >
-              Visit the local fish market
+              {listItem3}
             </Typography>
           </ListItem>
         </List>

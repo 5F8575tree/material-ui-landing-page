@@ -33,6 +33,9 @@ const styles = {
   },
   image: {
     maxWidth: "100%",
+    width: "100%",
+    height: "auto",
+    maxHeight: "209px",
     mb: "16px",
   },
 };
