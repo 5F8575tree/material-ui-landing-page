@@ -13,7 +13,7 @@ const Hero = () => {
           <Typography variant="h2">
             Unique Experiences in Beautiful Kamakura
           </Typography>
-          <Typography variant="body1">
+          <Typography variant="body1" sx={styles.text}>
             Kamakura sits to the south west of Tokyo and provides a wonderful
             day trip.
             <br />
