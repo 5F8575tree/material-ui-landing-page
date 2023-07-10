@@ -8,7 +8,7 @@ import Container from "@mui/material/Container";
 import { useState } from "react";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBurger } from "@fortawesome/free-solid-svg-icons";
+import { faBars } from "@fortawesome/free-solid-svg-icons";
 
 import Navbar from "./Navbar";
 import Drawer from "./Drawer";
@@ -23,7 +23,7 @@ const Header = () => {
         <Drawer open={openDrawer} onClose={() => setOpenDrawer(false)} />
         <Toolbar disableGutters>
           <Typography component="a" href="/" sx={styles.logoDesk}>
-            LOGO
+            LOGO_Desk
           </Typography>
           <Box sx={{ flexGrow: 1, display: { xs: "flex", lg: "none" } }}>
             <IconButton
@@ -31,7 +31,7 @@ const Header = () => {
               aria-label="menu"
               onClick={() => setOpenDrawer(true)}
             >
-              <FontAwesomeIcon icon={faBurger} />
+              <FontAwesomeIcon icon={faBars} />
             </IconButton>
           </Box>
           <Typography component="a" href="/" sx={styles.logoMob}>

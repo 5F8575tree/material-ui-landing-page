@@ -4,7 +4,7 @@ const pages = [
   { title: "Tours", arrow: false },
   { title: "About", arrow: false },
   { title: "Reviews", arrow: false },
-  { title: "Blog", arrow: false },
+  { title: "Japan Blog", arrow: false },
   { title: "Contact", arrow: false },
 ];
 
