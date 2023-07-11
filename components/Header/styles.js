@@ -1,19 +1,20 @@
 const styles = {
   appBar: (theme) => ({
-    background: "#fff",
+    maxWidth: "1240px",
+    background: "#ffffff",
     boxShadow: "none",
-    position: "sticky",
-    top: 0,
     zIndex: "9999",
     [theme.breakpoints.up("lg")]: {
       padding: "16px 0",
+      maxWidth: "100%",
       margin: "auto",
     },
   }),
   container: (theme) => ({
     [theme.breakpoints.up("lg")]: {
       padding: 0,
-      margin: 0,
+      margin: "auto",
+      maxWidth: "1240px",
     },
   }),
 
@@ -21,12 +22,16 @@ const styles = {
     mr: 2,
     ml: 2,
     display: { xs: "none", lg: "flex" },
-    flexGrow: 1,
+    maxHeight: "60px",
   },
-  logoMob: {
+  logoMob: (theme) => ({
     mr: 2,
     display: { xs: "flex", lg: "none" },
-  },
+    maxHeight: "60px",
+    [theme.breakpoints.down("lg")]: {
+      maxHeight: "40px",
+    },
+  }),
 };
 
 export default styles;

@@ -19,7 +19,7 @@ const contactImage =
 const ContactUs = () => {
   return (
     <Box sx={styles.contactUs}>
-      <Box sx={styles.wrapper}>
+      <Box sx={styles.wrapper} id="contact">
         <Box sx={styles.form}>
           <Typography variant="h2">Get in touch!</Typography>
           <Typography variant="body1">

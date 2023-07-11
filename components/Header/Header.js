@@ -2,7 +2,6 @@ import AppBar from "@mui/material/AppBar";
 import Box from "@mui/material/Box";
 import Toolbar from "@mui/material/Toolbar";
 import IconButton from "@mui/material/IconButton";
-import Typography from "@mui/material/Typography";
 import Container from "@mui/material/Container";
 
 import { useState } from "react";
@@ -12,7 +11,9 @@ import { faBars } from "@fortawesome/free-solid-svg-icons";
 
 import Navbar from "../Navbar";
 import Drawer from "../Drawer";
+
 import styles from "./styles";
+import { Typography } from "@mui/material";
 
 const Header = () => {
   const [openDrawer, setOpenDrawer] = useState(false);
@@ -22,8 +23,15 @@ const Header = () => {
       <Container maxWidth="xl" sx={styles.container}>
         <Drawer open={openDrawer} onClose={() => setOpenDrawer(false)} />
         <Toolbar disableGutters>
-          <Typography component="a" href="/" sx={styles.logoDesk}>
-            LOGO_Desk
+          <Box component="img" href="/" sx={styles.logoDesk} src="/logo.png" />
+          <Typography
+            variant="body1"
+            sx={{
+              display: { xs: "none", lg: "flex" },
+              fontWeight: 700,
+            }}
+          >
+            KAMAKURA TOUR GUIDE
           </Typography>
           <Box sx={{ flexGrow: 1, display: { xs: "flex", lg: "none" } }}>
             <IconButton
@@ -34,9 +42,7 @@ const Header = () => {
               <FontAwesomeIcon icon={faBars} />
             </IconButton>
           </Box>
-          <Typography component="a" href="/" sx={styles.logoMob}>
-            LOGO_Mob
-          </Typography>
+          <Box component="img" href="/" sx={styles.logoMob} src="/logo.png" />
           <Box sx={{ flexGrow: 1, display: { xs: "none", lg: "flex" } }}>
             <Navbar />
           </Box>

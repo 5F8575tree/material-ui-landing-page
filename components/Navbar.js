@@ -1,24 +1,13 @@
-import { Box, Button } from "@mui/material";
+import { Box } from "@mui/material";
+import CustomLink from "./CustomLink";
 
 const pages = [
-  { title: "Tours", arrow: false },
-  { title: "About", arrow: false },
-  { title: "Reviews", arrow: false },
-  { title: "Japan Blog", arrow: false },
-  { title: "Contact", arrow: false },
+  { title: "Tours", href: "#tours" },
+  { title: "About", href: "#about" },
+  { title: "Reviews", href: "#reviews" },
+  { title: "News", href: "#news" },
+  { title: "Contact", href: "#contact" },
 ];
-
-const styles = {
-  btnLink: {
-    color: "#121212",
-    display: "flex",
-    fontSize: 18,
-    lineHeight: "26px",
-    fontWeight: 500,
-    textTransform: "capitalize",
-    marginRight: "4em",
-  },
-};
 
 const Navbar = () => {
   return (
@@ -29,13 +18,11 @@ const Navbar = () => {
         justifyContent: "flex-end",
       }}
     >
-      {pages.map((page, index) => {
-        return (
-          <Button key={index} sx={styles.btnLink}>
-            {page.title}
-          </Button>
-        );
-      })}
+      {pages.map((page, index) => (
+        <CustomLink key={index} href={page.href}>
+          {page.title}
+        </CustomLink>
+      ))}
     </Box>
   );
 };

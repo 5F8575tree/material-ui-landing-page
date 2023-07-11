@@ -23,7 +23,7 @@ const links = [
 
 const Experiences = () => {
   return (
-    <Box sx={styles.experiences}>
+    <Box sx={styles.experiences} id="about">
       <Box sx={styles.wrapper}>
         <Typography variant="h2">Explore the beauty of Kamakura</Typography>
         <Typography variant="body1" sx={{ margin: "25px 0" }}>

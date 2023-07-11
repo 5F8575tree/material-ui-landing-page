@@ -34,7 +34,7 @@ body {
 
 /* BACKGROUND ANIMATION */
 body {
-  background: linear-gradient(-45deg, #f3e9dc, #fdfbf9, #f8f2eb, #f3e9dc);
+  background: linear-gradient(-45deg, #f3e9dc, #e01872, #f8f2eb, #ec1c1c);
   background-size: 400% 400%;
   animation: gradient 15s ease infinite;
   height: 100vh;

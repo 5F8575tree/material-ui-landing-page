@@ -38,7 +38,7 @@ const data = [
 
 const QuickGlance = () => {
   return (
-    <Box sx={styles.quickGlance}>
+    <Box sx={styles.quickGlance} id="tours">
       <Box sx={styles.wrapper}>
         <Typography variant="h2">Our Tours</Typography>
         <Typography

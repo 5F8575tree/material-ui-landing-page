@@ -5,7 +5,6 @@ import {
   ListItem,
   Paper,
   InputBase,
-  Button,
   Box,
   Grid,
 } from "@mui/material";
@@ -13,6 +12,7 @@ import {
 import { Instagram, Twitter, Facebook } from "@mui/icons-material";
 
 import styles from "./styles";
+import CustomButton from "../Button";
 
 const services = [
   "Day Tours",
@@ -89,7 +89,11 @@ const Footer = () => {
                 return (
                   <ListItem sx={styles.itemList} key={index}>
                     {social.img}
-                    <Typography variant="body1" sx={{ marginLeft: "5px" }}>
+                    <Typography
+                      sx={{
+                        marginLeft: "5px",
+                      }}
+                    >
                       {social.title}
                     </Typography>
                   </ListItem>
@@ -109,7 +113,7 @@ const Footer = () => {
             </Typography>
             <Paper component="form" sx={styles.paper}>
               <InputBase sx={styles.inputBase} placeholder="Email" />
-              <Button sx={styles.btn}>Sign up</Button>
+              <CustomButton sx={styles.btn}>Sign up</CustomButton>
             </Paper>
           </Box>
         </Grid>
