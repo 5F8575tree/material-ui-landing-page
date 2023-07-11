@@ -6,7 +6,7 @@ const theme = createTheme({
       main: "#686868",
     },
     slateBlue: {
-      main: "#777FEB",
+      main: "#E82B10",
     },
     bg: {
       main: "#121212",
@@ -51,11 +51,8 @@ theme.typography.h3 = {
 theme.typography.body1 = {
   fontFamily: "'Red Hat Text', sans-serif",
   fontWeight: 400,
-  fontSize: 14,
+  fontSize: "18px",
   color: "#010101",
-  "@media (min-width:600px)": {
-    fontSize: 16,
-  },
 };
 
 export { theme };

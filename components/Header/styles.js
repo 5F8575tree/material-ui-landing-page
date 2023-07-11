@@ -4,6 +4,7 @@ const styles = {
     background: "#ffffff",
     boxShadow: "none",
     zIndex: "9999",
+    padding: "4px 0px",
     [theme.breakpoints.up("lg")]: {
       padding: "16px 0",
       maxWidth: "100%",

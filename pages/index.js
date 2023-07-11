@@ -7,6 +7,8 @@ import QuickGlance from "@/components/QuickGlance/QuickGlance";
 import Experiences from "@/components/Experiences/Experiences";
 import ContactUs from "@/components/ContactUs/ContactUs";
 import Footer from "@/components/Footer/Footer";
+import PostNav from "@/components/PostNav/PostNav";
+import SalesPitch from "@/components/SalesPitch/SalesPitch";
 
 export default function Home() {
   return (
@@ -20,6 +22,8 @@ export default function Home() {
       <main>
         <ThemeProvider theme={theme}>
           <Header />
+          <PostNav />
+          <SalesPitch />
           <Hero />
           <QuickGlance />
           <Experiences />

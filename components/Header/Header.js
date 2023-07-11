@@ -7,7 +7,11 @@ import Container from "@mui/material/Container";
 import { useState } from "react";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faBars } from "@fortawesome/free-solid-svg-icons";
+import {
+  faAngleDown,
+  faBars,
+  faEnvelope,
+} from "@fortawesome/free-solid-svg-icons";
 
 import Navbar from "../Navbar";
 import Drawer from "../Drawer";
@@ -33,7 +37,14 @@ const Header = () => {
           >
             KAMAKURA TOUR GUIDE
           </Typography>
-          <Box sx={{ flexGrow: 1, display: { xs: "flex", lg: "none" } }}>
+          <Box
+            sx={{
+              flexGrow: 1,
+              display: { xs: "flex", lg: "none" },
+              alignItems: "center",
+              justifyContent: "space-between",
+            }}
+          >
             <IconButton
               size="large"
               aria-label="menu"
@@ -41,8 +52,40 @@ const Header = () => {
             >
               <FontAwesomeIcon icon={faBars} />
             </IconButton>
+            <Box component="img" href="/" sx={styles.logoMob} src="/logo.png" />
+            <Box sx={{ display: "flex", alignItems: "center" }}>
+              <FontAwesomeIcon
+                icon={faEnvelope}
+                style={{ fontSize: "28px", color: "#121212" }}
+                onMouseEnter={(e) => (e.currentTarget.style.cursor = "pointer")}
+              />
+              <Typography
+                variant="h2"
+                sx={{
+                  color: "#121212",
+                  fontSize: "28px",
+                  padding: "8px",
+                  marginBottom: "4px",
+                  display: { xs: "flex", sm: "none" },
+                }}
+              >
+                |
+              </Typography>
+              <Box
+                component="img"
+                src="/uk-flag-circle.svg"
+                style={{ marginLeft: "8px" }}
+              />
+              <FontAwesomeIcon
+                icon={faAngleDown}
+                style={{
+                  color: "#121212",
+                  paddingLeft: "8px",
+                }}
+                onMouseEnter={(e) => (e.currentTarget.style.cursor = "pointer")}
+              />
+            </Box>
           </Box>
-          <Box component="img" href="/" sx={styles.logoMob} src="/logo.png" />
           <Box sx={{ flexGrow: 1, display: { xs: "none", lg: "flex" } }}>
             <Navbar />
           </Box>

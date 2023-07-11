@@ -11,7 +11,7 @@ const styles = {
     background: theme.palette.slateBlue.main,
     borderRadius: "8px",
     "&:hover": {
-      background: "#646ab0",
+      background: "#121212",
     },
   }),
 };

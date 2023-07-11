@@ -8,11 +8,11 @@ const styles = {
     },
   }),
   wrapper: (theme) => ({
-    padding: "16px",
+    padding: "44px 16px",
     [theme.breakpoints.up("md")]: {
-      maxWidth: 1240,
       display: "flex",
       alignItems: "center",
+      maxWidth: 1240,
       padding: "32px 20px 20px",
       gap: "35px",
     },
