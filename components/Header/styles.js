@@ -1,13 +1,13 @@
 const styles = {
   appBar: (theme) => ({
-    background: "transparent",
+    background: "#fff",
     boxShadow: "none",
     position: "sticky",
     top: 0,
+    zIndex: "9999",
     [theme.breakpoints.up("lg")]: {
       padding: "16px 0",
       margin: "auto",
-      maxWidth: "1240px",
     },
   }),
   container: (theme) => ({
@@ -19,6 +19,7 @@ const styles = {
 
   logoDesk: {
     mr: 2,
+    ml: 2,
     display: { xs: "none", lg: "flex" },
     flexGrow: 1,
   },
