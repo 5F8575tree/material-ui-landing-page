@@ -93,7 +93,7 @@ const styles = {
     fontWeight: 400,
     lineHeight: 1.5,
     padding: "4px",
-    borderRadius: "12px",
+    borderRadius: "0px",
     color: "#121212",
     background: `${theme.palette.mode === "dark" ? grey[900] : "#fff"}`,
     border: `1px solid ${
@@ -103,13 +103,7 @@ const styles = {
       theme.palette.mode === "dark" ? blue[900] : blue[100]
     }`,
     "& input:hover": {
-      borderColor: `${blue[400]}`,
-    },
-
-    "& input:focus": {
-      boxShadow: `0 0 0 3px ${
-        theme.palette.mode === "dark" ? blue[600] : blue[200]
-      }`,
+      borderColor: "#3399FF",
     },
 
     "& input::placeholder": {

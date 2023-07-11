@@ -23,7 +23,11 @@ const styles = {
 const Navbar = () => {
   return (
     <Box
-      sx={{ flexGrow: 1, display: { lg: "flex" }, justifyContent: "flex-end" }}
+      sx={{
+        flexGrow: 1,
+        display: { lg: "flex" },
+        justifyContent: "flex-end",
+      }}
     >
       {pages.map((page, index) => {
         return (

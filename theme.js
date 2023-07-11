@@ -21,7 +21,6 @@ const theme = createTheme({
         input: {
           padding: "8px",
         },
-        root: {},
       },
     },
   },

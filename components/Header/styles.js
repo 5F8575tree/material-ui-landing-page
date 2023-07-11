@@ -1,9 +1,10 @@
 const styles = {
   appBar: (theme) => ({
-    background: "#fff",
+    background: "transparent",
     boxShadow: "none",
+    position: "sticky",
+    top: 0,
     [theme.breakpoints.up("lg")]: {
-      borderBottom: "0.5px solid #777FEB",
       padding: "16px 0",
       margin: "auto",
       maxWidth: "1240px",
