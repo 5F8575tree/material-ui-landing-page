@@ -9,10 +9,7 @@ const pages = [
   { title: "Experiences", href: "#tours" },
   { title: "About KTG", href: "#about" },
   { title: "Travel Tips", href: "#" },
-  { title: "Useful Info", href: "#" },
   { title: "Japanese Culture", href: "#" },
-  { title: "Destination in Kamakura", href: "#" },
-  { title: "Blog", href: "#" },
   { title: "Contact", href: "#contact" },
 ];
 

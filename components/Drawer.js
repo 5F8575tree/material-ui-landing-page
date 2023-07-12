@@ -25,7 +25,7 @@ const Drawer = ({ open, onClose }) => {
         </IconButton>
         <Box
           sx={{
-            padding: "4em",
+            padding: "1em",
             position: "relative",
           }}
         >
@@ -35,7 +35,7 @@ const Drawer = ({ open, onClose }) => {
               top: 0,
               left: 0,
               width: "100%",
-              height: "100vh",
+              height: "100%",
               backgroundImage:
                 'url("https://images.unsplash.com/photo-1554797589-7241bb691973?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTJ8fGphcGFufGVufDB8fDB8fHww&auto=format&fit=crop&w=400&q=60")',
               backgroundSize: "cover",
