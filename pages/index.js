@@ -7,6 +7,7 @@ import QuickGlance from "@/components/QuickGlance/QuickGlance";
 import Experiences from "@/components/Experiences/Experiences";
 import ContactUs from "@/components/ContactUs/ContactUs";
 import Footer from "@/components/Footer/Footer";
+import FirstImpression from "@/components/FirstImpression/FirstImpression";
 
 export default function Home() {
   return (
@@ -21,6 +22,7 @@ export default function Home() {
         <ThemeProvider theme={theme}>
           <Header />
           <Hero />
+          <FirstImpression />
           <QuickGlance />
           <Experiences />
           <ContactUs />
