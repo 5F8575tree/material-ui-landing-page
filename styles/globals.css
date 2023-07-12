@@ -62,3 +62,12 @@ a {
     color-scheme: dark;
   }
 } */
+
+/* OVERRIDES */
+.MuiButtonBase-root.MuiIconButton-root.MuiIconButton-sizeMedium {
+  margin-left: 0px; /* Add your desired margin-left value here */
+  margin: 8px;
+  font-size: 32px;
+  padding-left: 16px;
+  padding-right: 16px;
+}

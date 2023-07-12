@@ -16,8 +16,11 @@ const Drawer = ({ open, onClose }) => {
       open={open}
       onClose={onClose}
     >
-      <Box sx={{ padding: "2px" }}>
-        <IconButton onClick={onClose} sx={{ margin: "16px 0", marginLeft: 5 }}>
+      <Box sx={{ padding: "0px" }}>
+        <IconButton
+          onClick={onClose}
+          // stlyes for this element are in globals.css for specificity
+        >
           <FontAwesomeIcon icon={faTimes} />
         </IconButton>
         <Box sx={{ padding: "4em" }}>
