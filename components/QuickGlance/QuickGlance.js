@@ -16,23 +16,17 @@ const data = [
   {
     title: "Cuisine",
     image: cuisineImage,
-    listItem1: "Find the best local restaurants",
-    listItem2: "Share a drink while gazing at the ocean",
-    listItem3: "Visit the local fish market",
+    text: "Our local guide will take you for a tour of some of the wonderful eateries Kamakura has to offer. Of course, seafood is perfect here - particularly the local delicacy shirasu. You guide is more than happy to take you to a bustling, or beachside, izakaya pub restaurant if that is more your thing. As the Japanese say - o-makase! (Let it to us!)",
   },
   {
     title: "History",
     image: historyImage,
-    listItem1: "Discover ancient Buddhist temples",
-    listItem2: "Visit the shrine of Minamoto no Yoritomo",
-    listItem3: "See the Great Buddha of Kamakura",
+    text: "From ancient Buddhist temples and mystic Shinto shrines to samurai strongholds, Kamakura is steeped in fascinating history. Your guide is an expert of the area and the Kamakura period itself, so they are sure to show you the finest locations.",
   },
   {
     title: "Hiking",
     image: hikingImage,
-    listItem1: "Walk thousand-year-old trails",
-    listItem2: "Stop off at hidden Buddhist temples",
-    listItem3: "Enjoy views over the Pacific Ocean",
+    text: "Kamakura is surrounded by the ocean in the south and by wooded hills in all other directions. Attractive hiking trails lead through the woods along these hills and connect various atmospheric temples. The trails are a great way to travel between some of Kamakura's sights. Many of the trails do not take long to complete - typically between 30 to 90 minutes - and allow visitors to enjoy a mix of nature and cultural sights.",
   },
 ];
 
@@ -41,10 +35,7 @@ const QuickGlance = () => {
     <Box sx={styles.quickGlance} id="tours">
       <Box sx={styles.wrapper}>
         <Typography variant="h2">Our Tours</Typography>
-        <Typography
-          variant="body1"
-          sx={{ textTransform: "capitalize", margin: "25px 0" }}
-        >
+        <Typography variant="body1" sx={{ margin: "25px 0" }}>
           We offer custom tours, alongside our trusted regular tours.
         </Typography>
         <Stack sx={styles.stack}>
@@ -54,9 +45,7 @@ const QuickGlance = () => {
                 key={index}
                 title={item.title}
                 image={item.image}
-                listItem1={item.listItem1}
-                listItem2={item.listItem2}
-                listItem3={item.listItem3}
+                text={item.text}
               />
             );
           })}
