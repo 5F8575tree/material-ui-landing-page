@@ -28,7 +28,7 @@ const styles = {
     gap: "4px",
   },
   right: {
-    marginTop: "32px",
+    margin: "32px auto",
   },
   photo: {
     height: "220px",

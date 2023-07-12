@@ -8,6 +8,7 @@ import Experiences from "@/components/Experiences/Experiences";
 import ContactUs from "@/components/ContactUs/ContactUs";
 import Footer from "@/components/Footer/Footer";
 import FirstImpression from "@/components/FirstImpression/FirstImpression";
+import Reviews from "@/components/Reviews/Reviews";
 
 export default function Home() {
   return (
@@ -23,6 +24,7 @@ export default function Home() {
           <Header />
           <Hero />
           <FirstImpression />
+          <Reviews />
           <QuickGlance />
           <Experiences />
           <ContactUs />
