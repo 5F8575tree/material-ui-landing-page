@@ -86,10 +86,10 @@ const Header = () => {
               />
             </Box>
           </Box>
-          <Box sx={{ flexGrow: 1, display: { xs: "none", lg: "flex" } }}>
-            <Navbar />
-          </Box>
         </Toolbar>
+        <Box sx={{ flexGrow: 1, display: { xs: "none", lg: "flex" } }}>
+          <Navbar />
+        </Box>
       </Container>
     </AppBar>
   );

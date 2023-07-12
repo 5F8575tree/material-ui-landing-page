@@ -5,11 +5,11 @@ const CustomLink = ({ children, href, sx }) => {
     <Link
       sx={{
         fontFamily: "'Red Hat Text', sans-serif",
-        fontWeight: 300,
+        fontWeight: 500,
         fontSize: "18px",
         textTransform: "capitalize",
         color: "#121212",
-        padding: "8px 16px",
+        padding: "0px",
         borderRadius: "42px 42px 0 0",
         background: "transparent",
         borderBottom: "0.5px solid rgba(0,0,0,0)",
