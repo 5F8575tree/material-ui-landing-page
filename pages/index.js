@@ -9,6 +9,7 @@ import ContactUs from "@/components/ContactUs/ContactUs";
 import Footer from "@/components/Footer/Footer";
 import FirstImpression from "@/components/FirstImpression/FirstImpression";
 import Reviews from "@/components/Reviews/Reviews";
+import SearchTours from "@/components/SearchTours/SearchTours";
 
 export default function Home() {
   return (
@@ -27,6 +28,7 @@ export default function Home() {
           <Reviews />
           <QuickGlance />
           <Experiences />
+          <SearchTours />
           <ContactUs />
           <Footer />
         </ThemeProvider>
