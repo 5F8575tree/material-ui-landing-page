@@ -20,6 +20,8 @@ const styles = {
     padding: "16px",
     color: "white",
     display: "flex",
+    flexDirection: "column",
+    alignItems: "center",
   },
   left: {
     marginRight: "16px",
