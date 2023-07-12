@@ -1,7 +1,6 @@
 import { Box, Typography } from "@mui/material";
 import CustomLink from "./CustomLink";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faAngleRight } from "@fortawesome/free-solid-svg-icons";
+import ChevronRightIcon from "@mui/icons-material/ChevronRight";
 import CustomButton from "./Button";
 import { Instagram, Twitter, Facebook } from "@mui/icons-material";
 
@@ -42,7 +41,7 @@ const Navbar = () => {
           >
             Small Group Tours
           </Typography>
-          <FontAwesomeIcon icon={faAngleRight} />
+          <ChevronRightIcon />
         </Box>
         <Box
           sx={{
@@ -58,7 +57,7 @@ const Navbar = () => {
           >
             Private Day Tours
           </Typography>
-          <FontAwesomeIcon icon={faAngleRight} />
+          <ChevronRightIcon />
         </Box>
         <Box
           sx={{
@@ -73,7 +72,7 @@ const Navbar = () => {
           >
             Multi-Day Tours
           </Typography>
-          <FontAwesomeIcon icon={faAngleRight} />
+          <ChevronRightIcon />
         </Box>
       </Box>
       {pages.map((page, index) => (
