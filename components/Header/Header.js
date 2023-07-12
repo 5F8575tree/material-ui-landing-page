@@ -4,14 +4,11 @@ import Toolbar from "@mui/material/Toolbar";
 import IconButton from "@mui/material/IconButton";
 import Container from "@mui/material/Container";
 
-import { useState } from "react";
+import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
+import EmailIcon from "@mui/icons-material/Email";
+import MenuIcon from "@mui/icons-material/Menu";
 
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faAngleDown,
-  faBars,
-  faEnvelope,
-} from "@fortawesome/free-solid-svg-icons";
+import { useState } from "react";
 
 import Navbar from "../Navbar";
 import Drawer from "../Drawer";
@@ -58,7 +55,7 @@ const Header = () => {
                 aria-label="menu"
                 onClick={() => setOpenDrawer(true)}
               >
-                <FontAwesomeIcon icon={faBars} />
+                <MenuIcon />
               </IconButton>
               <Box
                 component="img"
@@ -67,8 +64,7 @@ const Header = () => {
                 src="/logo.png"
               />
               <Box sx={{ display: "flex", alignItems: "center" }}>
-                <FontAwesomeIcon
-                  icon={faEnvelope}
+                <EmailIcon
                   style={{ fontSize: "28px", color: "#121212" }}
                   onMouseEnter={(e) =>
                     (e.currentTarget.style.cursor = "pointer")
@@ -91,8 +87,7 @@ const Header = () => {
                   src="/uk-flag-circle.svg"
                   style={{ marginLeft: "8px" }}
                 />
-                <FontAwesomeIcon
-                  icon={faAngleDown}
+                <KeyboardArrowDownIcon
                   style={{
                     color: "#121212",
                     paddingLeft: "8px",
