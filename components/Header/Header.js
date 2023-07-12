@@ -15,6 +15,8 @@ import {
 
 import Navbar from "../Navbar";
 import Drawer from "../Drawer";
+import PostNav from "@/components/PostNav/PostNav";
+import SalesPitch from "@/components/SalesPitch/SalesPitch";
 
 import styles from "./styles";
 import { Typography } from "@mui/material";
@@ -23,75 +25,94 @@ const Header = () => {
   const [openDrawer, setOpenDrawer] = useState(false);
 
   return (
-    <AppBar position="static" sx={styles.appBar}>
-      <Container maxWidth="xl" sx={styles.container}>
-        <Drawer open={openDrawer} onClose={() => setOpenDrawer(false)} />
-        <Toolbar disableGutters>
-          <Box component="img" href="/" sx={styles.logoDesk} src="/logo.png" />
-          <Typography
-            variant="body1"
-            sx={{
-              display: { xs: "none", lg: "flex" },
-              fontWeight: 700,
-            }}
-          >
-            KAMAKURA TOUR GUIDE
-          </Typography>
-          <Box
-            sx={{
-              flexGrow: 1,
-              display: { xs: "flex", lg: "none" },
-              alignItems: "center",
-              justifyContent: "space-between",
-            }}
-          >
-            <IconButton
-              size="large"
-              aria-label="menu"
-              onClick={() => setOpenDrawer(true)}
+    <>
+      <AppBar position="static" sx={styles.appBar}>
+        <Container maxWidth="xl" sx={styles.container}>
+          <Drawer open={openDrawer} onClose={() => setOpenDrawer(false)} />
+          <Toolbar disableGutters>
+            <Box
+              component="img"
+              href="/"
+              sx={styles.logoDesk}
+              src="/logo.png"
+            />
+            <Typography
+              variant="body1"
+              sx={{
+                display: { xs: "none", lg: "flex" },
+                fontWeight: 700,
+              }}
             >
-              <FontAwesomeIcon icon={faBars} />
-            </IconButton>
-            <Box component="img" href="/" sx={styles.logoMob} src="/logo.png" />
-            <Box sx={{ display: "flex", alignItems: "center" }}>
-              <FontAwesomeIcon
-                icon={faEnvelope}
-                style={{ fontSize: "28px", color: "#121212" }}
-                onMouseEnter={(e) => (e.currentTarget.style.cursor = "pointer")}
-              />
-              <Typography
-                variant="h2"
-                sx={{
-                  color: "#121212",
-                  fontSize: "28px",
-                  padding: "8px",
-                  marginBottom: "4px",
-                  display: { xs: "flex", sm: "none" },
-                }}
+              KAMAKURA TOUR GUIDE
+            </Typography>
+            <Box
+              sx={{
+                flexGrow: 1,
+                display: { xs: "flex", lg: "none" },
+                alignItems: "center",
+                justifyContent: "space-between",
+              }}
+            >
+              <IconButton
+                size="large"
+                aria-label="menu"
+                onClick={() => setOpenDrawer(true)}
               >
-                |
-              </Typography>
+                <FontAwesomeIcon icon={faBars} />
+              </IconButton>
               <Box
                 component="img"
-                src="/uk-flag-circle.svg"
-                style={{ marginLeft: "8px" }}
+                href="/"
+                sx={styles.logoMob}
+                src="/logo.png"
               />
-              <FontAwesomeIcon
-                icon={faAngleDown}
-                style={{
-                  color: "#121212",
-                  paddingLeft: "8px",
-                }}
-                onMouseEnter={(e) => (e.currentTarget.style.cursor = "pointer")}
-              />
+              <Box sx={{ display: "flex", alignItems: "center" }}>
+                <FontAwesomeIcon
+                  icon={faEnvelope}
+                  style={{ fontSize: "28px", color: "#121212" }}
+                  onMouseEnter={(e) =>
+                    (e.currentTarget.style.cursor = "pointer")
+                  }
+                />
+                <Typography
+                  variant="h2"
+                  sx={{
+                    color: "#121212",
+                    fontSize: "28px",
+                    padding: "8px",
+                    marginBottom: "4px",
+                    display: { xs: "flex", sm: "none" },
+                  }}
+                >
+                  |
+                </Typography>
+                <Box
+                  component="img"
+                  src="/uk-flag-circle.svg"
+                  style={{ marginLeft: "8px" }}
+                />
+                <FontAwesomeIcon
+                  icon={faAngleDown}
+                  style={{
+                    color: "#121212",
+                    paddingLeft: "8px",
+                  }}
+                  onMouseEnter={(e) =>
+                    (e.currentTarget.style.cursor = "pointer")
+                  }
+                />
+              </Box>
             </Box>
+          </Toolbar>
+          <Box sx={{ flexGrow: 1, display: { xs: "none", lg: "flex" } }}>
+            <Navbar />
+            {/* TODO: Need a conditional here to render some links on desktop version! */}
           </Box>
-        </Toolbar>
-        <Box sx={{ flexGrow: 1, display: { xs: "none", lg: "flex" } }}>
-          <Navbar />
-        </Box>
-      </Container>
-    </AppBar>
+        </Container>
+      </AppBar>
+      <PostNav />
+      <SalesPitch />
+    </>
   );
 };
 

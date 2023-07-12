@@ -22,9 +22,9 @@ const Navbar = () => {
     <Box
       sx={{
         flexGrow: 1,
-        display: "flex",
+        display: { xs: "flex", lg: "none" },
         justifyContent: "flex-end",
-        flexDirection: { xs: "column", lg: "row" },
+        flexDirection: { xs: "column" },
       }}
     >
       <Box sx={{ marginTop: "32px" }}>

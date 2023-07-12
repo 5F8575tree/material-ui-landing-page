@@ -34,12 +34,13 @@ body {
 
 /* BACKGROUND ANIMATION */
 body {
-  background: linear-gradient(-45deg, #f3e9dc, #f1a1c5, #f8f2eb, #ffa4a4);
+  background: linear-gradient(-45deg, #f0f1f1, #ffffff);
+  /* background: linear-gradient(-45deg, #f3e9dc, #f1a1c5, #f8f2eb, #ffa4a4);
   background-size: 400% 400%;
   animation: gradient 15s ease infinite;
-  height: 100vh;
+  height: 100vh; */
 }
-
+/*
 @keyframes gradient {
   0% {
     background-position: 0% 50%;
@@ -50,7 +51,7 @@ body {
   100% {
     background-position: 0% 50%;
   }
-}
+} */
 
 a {
   color: inherit;
