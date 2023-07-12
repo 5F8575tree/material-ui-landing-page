@@ -10,7 +10,7 @@ const Drawer = ({ open, onClose }) => {
   return (
     <MuiDrawer
       PaperProps={{
-        sx: { width: "100%", overflow: "hidden" },
+        sx: { width: "100%" },
       }}
       anchor="left" // Drawer comes out from the left
       open={open}

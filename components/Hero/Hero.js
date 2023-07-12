@@ -15,7 +15,7 @@ const Hero = () => {
             display: "flex",
             flexDirection: "column",
             alignItems: "center",
-            gap: "300px",
+            gap: "200px",
           }}
         >
           <Box sx={styles.upperBox}>

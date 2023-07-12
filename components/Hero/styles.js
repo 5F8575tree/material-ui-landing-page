@@ -5,7 +5,6 @@ const styles = {
       'url("https://images.unsplash.com/photo-1562926874-fcc322329ae0?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fGVub3NoaW1hfGVufDB8fDB8fHww&auto=format&fit=crop&w=800&q=60")',
     backgroundSize: "cover",
     backgroundPosition: "center",
-    minHeight: "100%",
     [theme.breakpoints.up("lg")]: {
       display: "flex",
       justifyContent: "center",
@@ -14,7 +13,6 @@ const styles = {
   }),
   wrapper: (theme) => ({
     backgroundColor: "rgba(0,0,0,0.2)",
-    minHeight: "670px",
     padding: "44px 16px",
     [theme.breakpoints.up("md")]: {
       display: "flex",
