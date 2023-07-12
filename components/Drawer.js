@@ -3,8 +3,7 @@ import Box from "@mui/material/Box";
 import IconButton from "@mui/material/IconButton";
 import Typography from "@mui/material/Typography";
 
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faTimes } from "@fortawesome/free-solid-svg-icons";
+import CloseIcon from "@mui/icons-material/Close";
 import Navbar from "./Navbar";
 
 const Drawer = ({ open, onClose }) => {
@@ -22,7 +21,7 @@ const Drawer = ({ open, onClose }) => {
           onClick={onClose}
           // stlyes for this element are in globals.css for specificity
         >
-          <FontAwesomeIcon icon={faTimes} />
+          <CloseIcon />
         </IconButton>
         <Box
           sx={{
