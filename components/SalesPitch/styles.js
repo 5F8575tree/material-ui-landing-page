@@ -3,7 +3,7 @@ const styles = {
     display: "flex",
     alignItems: "center",
     justifyContent: "center",
-    padding: "10px 0px",
+    padding: "10px",
     color: "white",
     background: "red",
     "&:hover": {

@@ -8,7 +8,7 @@ const SalesPitch = () => {
     <Box sx={styles.salesPitch}>
       <InfoIcon style={{ marginRight: "4px", fontSize: "18px" }} />
       <Typography sx={{ fontSize: "16px", color: "white" }}>
-        View all available dates for 2023-2024 Tours.
+        View all available dates for 2024 Tours.
       </Typography>
       <ChevronRightIcon style={{ marginLeft: "4px", fontSize: "18px" }} />
     </Box>
