@@ -2,8 +2,7 @@ import styles from "./styles";
 import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
 import StarsIcon from "@mui/icons-material/Stars";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faMedal } from "@fortawesome/free-solid-svg-icons";
+import WorkspacePremiumIcon from "@mui/icons-material/WorkspacePremium";
 
 const Reviews = () => {
   return (
@@ -29,7 +28,7 @@ const Reviews = () => {
             justifyContent: "center",
           }}
         >
-          <FontAwesomeIcon icon={faMedal} style={{ fontSize: "32px" }} />
+          <WorkspacePremiumIcon />
           <Typography variant="body2" sx={{ fontSize: "18px" }}>
             TripAdvisor
           </Typography>

@@ -3,7 +3,7 @@ import { theme } from "../../theme"; // Import your custom theme
 const styles = {
   card: (theme) => ({
     display: "flex",
-    minWidth: "400px",
+    flexDirection: "column",
     background: "transparent",
     boxShadow: "none",
     transition: "all 0.3s ease",
@@ -28,10 +28,10 @@ const styles = {
   },
   image: {
     width: "100%",
-    height: "150px",
-    maxWidth: "200px",
+    height: "250px",
+    maxWidth: "300px",
     maxHeight: "209px",
-    mt: "8px",
+    mt: "24px",
   },
 };
 

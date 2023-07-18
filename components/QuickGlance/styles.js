@@ -1,6 +1,6 @@
 const styles = {
   quickGlance: (theme) => ({
-    padding: "60px 20px 88px",
+    padding: "60px 20px 44px",
     textAlign: "center",
     [theme.breakpoints.up("lg")]: {
       display: "flex",
@@ -17,7 +17,7 @@ const styles = {
   }),
   stack: (theme) => ({
     mt: "44px",
-    gap: "44px",
+    gap: "16px",
     flexWrap: "wrap",
     display: "flex",
     flexDirection: "initial",

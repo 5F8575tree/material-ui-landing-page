@@ -1,6 +1,6 @@
 const styles = {
   firstImpression: {
-    marginTop: "88px",
+    marginTop: "0px",
     position: "relative",
   },
   background: {

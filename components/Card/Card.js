@@ -6,8 +6,7 @@ import styles from "./styles";
 const Card = ({ title, image, text }) => {
   return (
     <MuiCard sx={styles.card}>
-      <CardContent sx={{ padding: "0", display: "flex", gap: "16px" }}>
-        <Box component="img" src={image} sx={styles.image} />
+      <CardContent sx={{ padding: "0", display: "flex", gap: "8px" }}>
         <Box>
           <Typography variant="h3" sx={styles.title}>
             {title}
@@ -24,6 +23,7 @@ const Card = ({ title, image, text }) => {
           >
             {text}
           </Typography>
+          <Box component="img" src={image} sx={styles.image} />
         </Box>
       </CardContent>
     </MuiCard>

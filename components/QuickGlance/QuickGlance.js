@@ -35,7 +35,7 @@ const QuickGlance = () => {
     <Box sx={styles.quickGlance} id="tours">
       <Box sx={styles.wrapper}>
         <Typography variant="h2">Our Tours</Typography>
-        <Typography variant="body1" sx={{ margin: "25px 0" }}>
+        <Typography variant="body1" sx={{ margin: "8px 0" }}>
           We offer custom tours, alongside our trusted regular tours.
         </Typography>
         <Stack sx={styles.stack}>
