@@ -10,6 +10,7 @@ import Footer from "@/components/Footer/Footer";
 import FirstImpression from "@/components/FirstImpression/FirstImpression";
 import Reviews from "@/components/Reviews/Reviews";
 import SearchTours from "@/components/SearchTours/SearchTours";
+import PostHero from "@/components/PostHero/PostHero";
 
 export default function Home() {
   return (
@@ -24,6 +25,7 @@ export default function Home() {
         <ThemeProvider theme={theme}>
           <Header />
           <Hero />
+          <PostHero />
           <FirstImpression />
           <Reviews />
           <QuickGlance />

@@ -2,7 +2,7 @@ const styles = {
   salesPitch: (theme) => ({
     display: "flex",
     alignItems: "center",
-    justifyContent: "center",
+    justifyContent: "space-between",
     padding: "10px",
     color: "white",
     background: "#A50000",

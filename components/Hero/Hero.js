@@ -1,8 +1,6 @@
 import Box from "@mui/material/Box";
 import Typography from "@mui/material/Typography";
 
-import CustomButton from "../Button";
-
 import styles from "./styles";
 
 const Hero = () => {
@@ -36,14 +34,12 @@ const Hero = () => {
               sx={{
                 color: "#fff",
                 textAlign: "center",
-                textShadow: "0 2px 20px rgba(0,0,0,0.4)",
+                textShadow: "0 1px 24px rgba(0,0,0,0.9)",
+                marginTop: "16px",
               }}
             >
               Unique Experiences in Beautiful Kamakura
             </Typography>
-          </Box>
-          <Box sx={styles.lowerBox}>
-            <CustomButton>View Tours</CustomButton>
           </Box>
         </Box>
       </Box>
