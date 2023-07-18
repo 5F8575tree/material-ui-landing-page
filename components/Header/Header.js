@@ -4,7 +4,6 @@ import Toolbar from "@mui/material/Toolbar";
 import IconButton from "@mui/material/IconButton";
 import Container from "@mui/material/Container";
 
-import KeyboardArrowDownIcon from "@mui/icons-material/KeyboardArrowDown";
 import EmailIcon from "@mui/icons-material/Email";
 import MenuIcon from "@mui/icons-material/Menu";
 
@@ -16,6 +15,7 @@ import PostNav from "@/components/PostNav/PostNav";
 import SalesPitch from "@/components/SalesPitch/SalesPitch";
 
 import styles from "./styles";
+import ClickAwayListener from "../ClickAwayListener";
 import { Typography } from "@mui/material";
 
 const Header = () => {
@@ -82,20 +82,7 @@ const Header = () => {
                 >
                   |
                 </Typography>
-                <Box
-                  component="img"
-                  src="/uk-flag-circle.svg"
-                  style={{ marginLeft: "8px" }}
-                />
-                <KeyboardArrowDownIcon
-                  style={{
-                    color: "#121212",
-                    paddingLeft: "8px",
-                  }}
-                  onMouseEnter={(e) =>
-                    (e.currentTarget.style.cursor = "pointer")
-                  }
-                />
+                <ClickAwayListener />
               </Box>
             </Box>
           </Toolbar>
