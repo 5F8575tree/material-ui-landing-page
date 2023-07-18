@@ -75,6 +75,60 @@ const SearchTours = () => {
             <ArrowDownward sx={{ color: "white" }} />
           </Button>
         </Box>
+        <div
+          style={{
+            display: "flex",
+            width: "100%",
+            alignItems: "space-between",
+            marginTop: "16px",
+            zIndex: "99999",
+          }}
+        >
+          <div>
+            <label
+              style={{
+                color: "#fff",
+                fontFamily: "'Red Hat Text', sans-serif",
+              }}
+            >
+              Start date
+            </label>
+            <input
+              type="date"
+              style={{
+                padding: "8px",
+                borderRadius: "4px",
+                border: "1px solid #ffffff",
+                backgroundColor: "#fff",
+                color: "#333",
+                fontSize: "16px",
+                fontFamily: "'Red Hat Text', sans-serif",
+              }}
+            />
+          </div>
+          <div>
+            <label
+              style={{
+                color: "#fff",
+                fontFamily: "'Red Hat Text', sans-serif",
+              }}
+            >
+              End date
+            </label>
+            <input
+              type="date"
+              style={{
+                padding: "8px",
+                borderRadius: "4px",
+                border: "1px solid #ffffff",
+                backgroundColor: "#fff",
+                color: "#333",
+                fontSize: "16px",
+                fontFamily: "'Red Hat Text', sans-serif",
+              }}
+            />
+          </div>
+        </div>
       </Box>
     </Box>
   );

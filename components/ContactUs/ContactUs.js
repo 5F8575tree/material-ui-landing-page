@@ -4,12 +4,9 @@ import TextField from "@mui/material/TextField";
 
 import styles from "./styles";
 
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import {
-  faEnvelope,
-  faPhone,
-  faArrowRight,
-} from "@fortawesome/free-solid-svg-icons";
+import EmailIcon from "@mui/icons-material/Email";
+import LocalPhoneIcon from "@mui/icons-material/LocalPhone";
+
 import CustomButton from "../Button";
 import EmptyTextarea from "../CustomTextArea";
 
@@ -22,21 +19,21 @@ const ContactUs = () => {
       <Box sx={styles.wrapper} id="contact">
         <Box sx={styles.form}>
           <Typography variant="h2">Get in touch!</Typography>
-          <Typography variant="body1">
+          <Typography variant="body1" sx={{ fontSize: "16px", mt: "8px" }}>
             Let us know what you&#39;re looking for and we will help you design
             the perfect tour.
           </Typography>
           <Box sx={styles.info}>
             <Box sx={styles.itemBlockInfo}>
               <Box sx={styles.titleInfo}>
-                <FontAwesomeIcon icon={faEnvelope} sx={styles.imgInfo} />
+                <EmailIcon />
                 <Typography sx={{ marginLeft: "4px" }}>Email us</Typography>
               </Box>
               <Box sx={styles.titleValue}>support@email.com</Box>
             </Box>
             <Box sx={styles.itemBlockInfo}>
               <Box sx={styles.titleInfo}>
-                <FontAwesomeIcon icon={faPhone} />
+                <LocalPhoneIcon />
                 <Typography sx={{ marginLeft: "4px" }}>Phone us</Typography>
               </Box>
               <Box sx={styles.titleValue}>7770-9987-9928</Box>
@@ -48,13 +45,7 @@ const ContactUs = () => {
             <TextField placeholder="Email" sx={styles.textField} />
           </Box>
           <EmptyTextarea />
-          <CustomButton>
-            Send message
-            <FontAwesomeIcon icon={faArrowRight} />
-          </CustomButton>
-        </Box>
-        <Box>
-          <Box component="img" src={contactImage} sx={styles.photo} />
+          <CustomButton>Send message</CustomButton>
         </Box>
       </Box>
     </Box>

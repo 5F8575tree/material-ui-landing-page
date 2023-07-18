@@ -66,7 +66,7 @@ const styles = {
   icon: {
     width: "24px",
     height: "24px",
-    color: "#777FEB",
+    color: "#fa6400",
   },
   emailBlock: (theme) => ({
     [theme.breakpoints.up("lg")]: {

@@ -19,7 +19,9 @@ const styles = {
     display: "flex",
     flexDirection: "column",
     padding: "44px 20px",
+    minHeight: "500px",
     alignItems: "center",
+    justifyContent: "space-between",
   },
 };
 
