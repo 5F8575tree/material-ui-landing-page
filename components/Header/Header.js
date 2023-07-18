@@ -21,6 +21,21 @@ import { Typography } from "@mui/material";
 const Header = () => {
   const [openDrawer, setOpenDrawer] = useState(false);
 
+  const handleEmailClick = () => {
+    const email = "mjrawlins.dev@gmail.com";
+    const subject = "Inquiry";
+    const body = "Hello, I would like to get in touch.";
+
+    const mailtoLink = `mailto:${email}?subject=${encodeURIComponent(
+      subject
+    )}&body=${encodeURIComponent(body)}`;
+
+    const newWindow = window.open(mailtoLink, "_blank", "noopener,noreferrer");
+    if (newWindow) {
+      newWindow.opener = null;
+    }
+  };
+
   return (
     <>
       <AppBar position="static" sx={styles.appBar}>
@@ -69,6 +84,7 @@ const Header = () => {
                   onMouseEnter={(e) =>
                     (e.currentTarget.style.cursor = "pointer")
                   }
+                  onClick={handleEmailClick}
                 />
                 <Typography
                   variant="h2"
