@@ -34,7 +34,7 @@ const Navbar = () => {
         >
           <Typography
             variant="body1"
-            sx={{ color: "purple", fontWeight: 500, letterSpacing: "1px" }}
+            sx={{ color: "#A50000", fontWeight: 500, letterSpacing: "1px" }}
           >
             Small Group Tours
           </Typography>
@@ -50,7 +50,7 @@ const Navbar = () => {
         >
           <Typography
             variant="body1"
-            sx={{ color: "brown", fontWeight: 500, letterSpacing: "1px" }}
+            sx={{ color: "#E82B10", fontWeight: 500, letterSpacing: "1px" }}
           >
             Private Day Tours
           </Typography>
@@ -65,7 +65,7 @@ const Navbar = () => {
         >
           <Typography
             variant="body1"
-            sx={{ color: "teal", fontWeight: 500, letterSpacing: "1px" }}
+            sx={{ color: "#006886", fontWeight: 500, letterSpacing: "1px" }}
           >
             Multi-Day Tours
           </Typography>

@@ -4,7 +4,7 @@ const styles = {
   btn: (theme) => ({
     alignItems: "center",
     backgroundClip: "padding-box",
-    backgroundColor: "#fa6400",
+    backgroundColor: "#5EB6D7",
     border: "1px solid transparent",
     borderRadius: ".25rem",
     boxShadow: "rgba(0, 0, 0, 0.02) 0 1px 3px 0",
@@ -30,7 +30,7 @@ const styles = {
     verticalAlign: "baseline",
     width: "auto",
     "&:hover": {
-      backgroundColor: "#fb8332",
+      backgroundColor: "#006886",
       transform: "translateY(-1px)",
     },
   }),

@@ -5,7 +5,7 @@ const styles = {
     justifyContent: "center",
     padding: "10px",
     color: "white",
-    background: "red",
+    background: "#A50000",
     "&:hover": {
       cursor: "pointer",
     },
