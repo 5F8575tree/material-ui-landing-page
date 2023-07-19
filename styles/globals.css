@@ -77,3 +77,8 @@ a {
   padding-left: 16px;
   padding-right: 16px;
 }
+
+/* Override color property */
+.Mui-focused {
+  color: #f0f1f1 !important;
+}

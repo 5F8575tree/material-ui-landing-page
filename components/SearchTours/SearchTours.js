@@ -1,134 +1,68 @@
+import { useState } from "react";
+
 import Box from "@mui/material/Box";
-import { Button, Typography } from "@mui/material";
+import {
+  Select,
+  MenuItem,
+  Button,
+  InputLabel,
+  FormControl,
+  Typography,
+} from "@mui/material";
 import styles from "./styles";
-import { ArrowDownward } from "@mui/icons-material";
 
 const SearchTours = () => {
+  const [selectedValue, setSelectedValue] = useState("");
+
+  const handleChange = (event) => {
+    setSelectedValue(event.target.value);
+  };
+
   return (
     <Box sx={styles.searchTours}>
       <Box component="img" sx={styles.background} />
       <Box sx={styles.wrapper}>
         <Button
-          variant="outlined"
           sx={{
-            color: "#ffffff",
+            color: "#fff",
+            fontSize: "20px",
+            textTransform: "none",
             fontWeight: 300,
-            fontSize: "18px",
-            maxWidth: "300px",
-            textTransform: "capitalize",
-            border: "1px solid red",
+            border: "1px solid #5EB6D7",
+            padding: "8px 24px",
+            textShadow: "0px 2px 16px rgba(0,0,0,0.2)",
+            boxShadow: "0px 2px 6px rgba(0,0,0,0.1)",
           }}
         >
-          Search for your trip
+          Search our trips
         </Button>
-        <Box sx={{ width: "100%", marginTop: "28px" }}>
-          <Button
+        <FormControl sx={{ marginTop: "24px", width: "100%" }}>
+          <InputLabel
+            id="tour-style-label"
             sx={{
-              background: "#fa6400",
-              border: "1px solid transparent",
-              width: "100%",
-              height: "38px",
-              textAlign: "left",
-              display: "flex",
-              justifyContent: "space-between",
-              "&:hover": {
-                border: "1px solid #fa6400",
-              },
+              color: "#fff",
+              "&:focus": { color: "#fff" },
+              "&:active": { color: "#fff" },
             }}
           >
-            <Typography
-              sx={{
-                color: "white",
-                textTransform: "capitalize",
-                fontWeight: 300,
-              }}
-            >
-              Tour Style
-            </Typography>
-            <ArrowDownward sx={{ color: "white" }} />
-          </Button>
-        </Box>
-        <Box sx={{ width: "100%", marginTop: "16px" }}>
-          <Button
+            Tour Style
+          </InputLabel>
+          <Select
             sx={{
-              background: "#fa6400",
-              border: "1px solid transparent",
-              width: "100%",
-              height: "38px",
-              textAlign: "left",
-              display: "flex",
-              justifyContent: "space-between",
-              "&:hover": {
-                border: "1px solid #fa6400",
-              },
+              background: "#5EB6D7",
+              color: "#fff",
+              padding: "8px",
+              boxShadow: "0px 2px 6px rgba(0,0,0,0.1)",
             }}
+            value={selectedValue}
+            onChange={handleChange}
           >
-            <Typography
-              sx={{
-                color: "white",
-                textTransform: "capitalize",
-                fontWeight: 300,
-              }}
-            >
-              Area of Interest
-            </Typography>
-            <ArrowDownward sx={{ color: "white" }} />
-          </Button>
-        </Box>
-        <div
-          style={{
-            display: "flex",
-            width: "100%",
-            alignItems: "space-between",
-            marginTop: "16px",
-            zIndex: "99999",
-          }}
-        >
-          <div>
-            <label
-              style={{
-                color: "#fff",
-                fontFamily: "'Red Hat Text', sans-serif",
-              }}
-            >
-              Start date
-            </label>
-            <input
-              type="date"
-              style={{
-                padding: "8px",
-                borderRadius: "4px",
-                border: "1px solid #ffffff",
-                backgroundColor: "#fff",
-                color: "#333",
-                fontSize: "16px",
-                fontFamily: "'Red Hat Text', sans-serif",
-              }}
-            />
-          </div>
-          <div>
-            <label
-              style={{
-                color: "#fff",
-                fontFamily: "'Red Hat Text', sans-serif",
-              }}
-            >
-              End date
-            </label>
-            <input
-              type="date"
-              style={{
-                padding: "8px",
-                borderRadius: "4px",
-                border: "1px solid #ffffff",
-                backgroundColor: "#fff",
-                color: "#333",
-                fontSize: "16px",
-                fontFamily: "'Red Hat Text', sans-serif",
-              }}
-            />
-          </div>
-        </div>
+            <MenuItem value={1}>Group Tours</MenuItem>
+            <MenuItem value={2}>Private Day Tours</MenuItem>
+            <MenuItem value={3}>Private Evening Tours</MenuItem>
+            <MenuItem value={4}>Multi-Day Tours</MenuItem>
+          </Select>
+        </FormControl>
       </Box>
     </Box>
   );
