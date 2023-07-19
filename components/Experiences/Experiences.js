@@ -7,7 +7,7 @@ const image1 =
 const image2 =
   "https://images.unsplash.com/photo-1573102363932-40c3111c5f73?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80";
 const image3 =
-  "https://images.unsplash.com/photo-1622892795233-285d239877ea?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1374&q=80";
+  "https://images.unsplash.com/photo-1470256699805-a29e1b58598a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80";
 
 import styles from "./styles";
 
@@ -16,8 +16,13 @@ const Experiences = () => {
     <Box sx={styles.experiences} id="about">
       <Box sx={styles.background} />
       <Box sx={styles.wrapper}>
-        <Typography variant="h2">Recent photos from Kamakura</Typography>
-        <Typography variant="body1" sx={{ margin: "25px 0" }}>
+        <Typography variant="h2" sx={{ textAlign: "left" }}>
+          Recent photos from Kamakura
+        </Typography>
+        <Typography
+          variant="body1"
+          sx={{ margin: "25px 0", textAlign: "left" }}
+        >
           Our guides enjoy spending their free time exploring the local area.
           Kamakura has beaches, history, watersports, fishing, food, and
           friendly people. For a laidback atmosphere, get away from Tokyo and

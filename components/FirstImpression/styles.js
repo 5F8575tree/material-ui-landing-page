@@ -33,8 +33,8 @@ const styles = {
     margin: "32px auto",
   },
   photo: {
-    height: "220px",
-    width: "220px",
+    height: "350px",
+    width: "350px",
     objectFit: "cover",
     marginBottom: "8px",
   },

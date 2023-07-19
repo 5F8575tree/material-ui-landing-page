@@ -1,6 +1,6 @@
 const styles = {
   experiences: (theme) => ({
-    padding: "20px",
+    padding: "44px 20px",
     display: "flex",
     justifyContent: "center",
     textAlign: "center",

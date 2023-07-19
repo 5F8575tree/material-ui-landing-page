@@ -14,17 +14,17 @@ const hikingImage =
 
 const data = [
   {
-    title: "Cuisine",
+    title: "Food & Drink Tours",
     image: cuisineImage,
     text: "Our local guide will take you for a tour of some of the wonderful eateries Kamakura has to offer. Of course, seafood is perfect here - particularly the local delicacy shirasu. You guide is more than happy to take you to a bustling, or beachside, izakaya pub restaurant if that is more your thing. As the Japanese say - o-makase! (Let it to us!)",
   },
   {
-    title: "History",
+    title: "Historical Tours",
     image: historyImage,
     text: "From ancient Buddhist temples and mystic Shinto shrines to samurai strongholds, Kamakura is steeped in fascinating history. Your guide is an expert of the area and the Kamakura period itself, so they are sure to show you the finest locations.",
   },
   {
-    title: "Hiking",
+    title: "Hiking & Adventure Tours",
     image: hikingImage,
     text: "Kamakura is surrounded by the ocean in the south and by wooded hills in all other directions. Attractive hiking trails lead through the woods along these hills and connect various atmospheric temples. The trails are a great way to travel between some of Kamakura's sights. Many of the trails do not take long to complete - typically between 30 to 90 minutes - and allow visitors to enjoy a mix of nature and cultural sights.",
   },
@@ -34,9 +34,12 @@ const QuickGlance = () => {
   return (
     <Box sx={styles.quickGlance} id="tours">
       <Box sx={styles.wrapper}>
-        <Typography variant="h2">Our Tours</Typography>
-        <Typography variant="body1" sx={{ margin: "8px 0" }}>
-          We offer custom tours, alongside our trusted regular tours.
+        <Typography variant="h2" sx={{ textAlign: "left" }}>
+          Our Tours
+        </Typography>
+        <Typography variant="body1" sx={{ margin: "8px 0", textAlign: "left" }}>
+          We offer numerous pre-built tours, but don&#39;t be afraid to contact
+          us to discuss the perfect custom tour!
         </Typography>
         <Stack sx={styles.stack}>
           {data.map((item, index) => {

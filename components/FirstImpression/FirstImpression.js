@@ -11,16 +11,23 @@ const FirstImpression = () => {
         <Box sx={styles.left}>
           <Typography
             variant="h3"
-            sx={{ fontSize: "18px", marginBottom: "6px", fontWeight: 500 }}
+            sx={{
+              fontSize: "20px",
+              marginBottom: "6px",
+              fontWeight: 400,
+              color: "#006886",
+            }}
           >
             Escape from Tokyo
           </Typography>
           <Box
             component="img"
             sx={styles.photo}
-            src="https://images.unsplash.com/photo-1599454100839-da58b1d0a364?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjZ8fGVub3NoaW1hfGVufDB8fDB8fHww&auto=format&fit=crop&w=800&q=60"
+            src="https://images.unsplash.com/photo-1611164272029-28cb65bb42e8?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80"
           />
-          <CustomButton>About Kamakura</CustomButton>
+          <Box sx={{ maxWidth: "70%" }}>
+            <CustomButton>About Kamakura</CustomButton>
+          </Box>
         </Box>
         <Box sx={styles.right}>
           <Typography

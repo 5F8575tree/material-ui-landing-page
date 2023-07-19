@@ -11,6 +11,7 @@ import FirstImpression from "@/components/FirstImpression/FirstImpression";
 import Reviews from "@/components/Reviews/Reviews";
 import SearchTours from "@/components/SearchTours/SearchTours";
 import PostHero from "@/components/PostHero/PostHero";
+import MiniReview from "@/components/MiniReview/MiniReview";
 
 export default function Home() {
   return (
@@ -30,6 +31,7 @@ export default function Home() {
           <Reviews />
           <QuickGlance />
           <Experiences />
+          <MiniReview />
           <SearchTours />
           <ContactUs />
           <Footer />

@@ -14,7 +14,7 @@ const styles = {
     },
   }),
   title: {
-    color: "red",
+    color: "#006886",
     fontSize: "16px",
     fontWeight: 500,
     textAlign: "left",
@@ -28,9 +28,9 @@ const styles = {
   },
   image: {
     width: "100%",
-    height: "250px",
-    maxWidth: "300px",
-    maxHeight: "209px",
+    height: "350px",
+    maxWidth: "350px",
+    maxHeight: "250px",
     mt: "24px",
   },
 };

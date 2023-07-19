@@ -7,7 +7,9 @@ import WorkspacePremiumIcon from "@mui/icons-material/WorkspacePremium";
 const Reviews = () => {
   return (
     <Box sx={styles.reviews}>
-      <Typography variant="h3">See what others say</Typography>
+      <Typography variant="h3" sx={{ fontSize: "20px" }}>
+        See what others say
+      </Typography>
       <Box sx={styles.reviewsContent}>
         <Typography variant="h2">Excellent</Typography>
         <Box sx={{ margin: "8px 0" }}>
@@ -28,7 +30,7 @@ const Reviews = () => {
             justifyContent: "center",
           }}
         >
-          <WorkspacePremiumIcon />
+          <WorkspacePremiumIcon sx={{ color: "#A50000" }} />
           <Typography variant="body2" sx={{ fontSize: "18px" }}>
             TripAdvisor
           </Typography>
