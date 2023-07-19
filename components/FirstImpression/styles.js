@@ -24,7 +24,6 @@ const styles = {
     alignItems: "center",
   },
   left: {
-    marginRight: "16px",
     display: "flex",
     flexDirection: "column",
     gap: "4px",
